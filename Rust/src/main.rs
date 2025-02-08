@@ -49,12 +49,12 @@ fn first_n_primes(n: usize) -> Vec<usize> {
 }
 
 fn main() {
-    const n: usize = 100000000;
+    const N: usize = 100000000;
 
     let start = Instant::now();
-    let primes = first_n_primes(n);
+    let primes = first_n_primes(N);
     let duration = start.elapsed();
 
-    println!("{n}th Prime: {:?}", primes[n-1]);
+    println!("{N}th Prime: {:?}", primes[N -1]);
     println!("Time: {:?}", duration);
 }
